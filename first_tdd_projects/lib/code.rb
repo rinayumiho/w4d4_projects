@@ -18,4 +18,8 @@ class Array
         array
     end
 
+    def stock_picker
+
+    
+    end
 end
