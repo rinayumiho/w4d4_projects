@@ -20,24 +20,34 @@ describe 'Array' do
         end        
     end
 
-    describe "#my_transpose" do
+    
+
+    describe "#stock_picker" do
+        it "should return the most profitable pair of days to buy and sell" do
+            array = [9,1,8,5,7,3]
+            expect_result = [1, 2]
+            expect(array.stock_picker).to eq(expect_result)
+        end
+
+    end
+
+
+end
+
+describe "Code" do
+    describe "my_transpose" do
+    
         it "should store matrix as an array of column" do
             rows = [[0, 1, 2], 
                     [3, 4, 5],
                     [6, 7, 8]]
-
+    
             cols = [[0, 3, 6],
                     [1, 4, 7],
                     [2, 5, 8]]
-
-            expect(row.my_transpose).to eq(cols)
+    
+            expect(my_transpose(rows)).to eq(cols)
         end
     end
-
-    describe "#stock_picker" do
-        
-
-    end
-
 
 end
